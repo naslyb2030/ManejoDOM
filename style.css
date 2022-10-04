@@ -1,0 +1,54 @@
+/* Seteo Inicial */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Ejercicio 1 */
+.formulario{
+    align-items: center;
+    border: solid 1px rgb(59, 59, 219);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+.input{
+    height: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
+    border-radius: 5px;
+    text-align: center;
+}
+.color{
+    border: none;
+    height: 30px;
+}
+/* Comienzo Ejercicio 2 */
+.Ej2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+/* Diseño textarea */
+.areaText{
+    min-width: 1000px;
+    height: 200px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+/* Validación textarea */
+textarea:valid {border-color: rgb(7, 223, 7);}
+textarea:invalid {border-color: rgb(223, 14, 7);}
+/* Creación de animación */
+@keyframes shake {
+    0%,100% {transform: translateX(0);}
+    25% {transform: translateX(8px);}
+    75% {transform: translateX(-8px)}
+}
+textarea:invalid {animation: shake 0.2s 0s 3;}
