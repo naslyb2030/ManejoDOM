@@ -9,6 +9,8 @@
     <meta name="keywords" content="Aprende lógica, html, css, javascript, BD, vue.js, laravel">
     <!-- Importar css -->
     <link rel="stylesheet" href="./style.css">
+    <!-- Importando bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <!-- Cambiar icono -->
     <link rel="icon" type="image/png" sizes="32x32" href="./javascript.png">
     <title>Ejercicio</title>
@@ -48,10 +50,84 @@
         <!-- btn validar -->
         <button class="btn" id="btnValidar">Validar</button>
     </section>
+    <!-- Ejercicio  3 -->
+    <section class="Ej2">
+        <h3>Ejercicio 3 - Expresiones Regulares</h3>
+        <label for="">Ejemplo: Expresión regular: Letra+vocal</label>
+        <input type="text" name="" id="txtCar" placeholder="">
+        <input id="btnCar" type="button" value="Validar">
+        <p id="errorCar"></p>
+        <label for="">Ejemplo: Expresión regular: Letra+vocal+numero+longitud</label>
+        <input type="text" name="" id="txtCarNum" placeholder="">
+        <input id="btnCarNum" type="button" value="Validar">
+        <p id="errorCarNum"></p>
+        <label for="">Ejemplo: Expresión regular: Numeros</label>
+        <input type="text" name="" id="txtNum" placeholder="">
+        <input id="btnNum" type="button" value="Validar">
+        <p id="errorNum"></p>
+    </section>
 </form>
+<section class="Ej2">
+    <h3>Ejercicio 4 - Eventos del teclado</h3>
+    <label for="">Ingrese un texto: </label>
+    <input type="text" name="" id="txtPalabras" placeholder="">
+
+    <label for="">Evento Keyup max 50 caracteres: </label>
+    <input type="text" name="" id="txtCaracteres" placeholder="" maxlength="50">
+    <p id="cantiPalabras"></p>
+</section>
+
+<section class="Ej2">
+    <h3>Ejercicio 5 - Manipulación de Imágenes</h3>
+    <h2>Galería</h2>
+    <!-- Pantalla principal -->
+    <div class="imageContentDisplay">
+        <img src="./img/tec1.jpg" alt="" class="image" name="Principal">
+    </div>
+    <!-- Opciones de menú de imagenes -->
+    <div class="menuImages">
+        <img src="./img/tec2.jpg" alt="" name="muestra1" class="image2" onclick="muestra(1)">
+        <img src="./img/tec3.jpg" alt="" name="muestra2" class="image2" onclick="muestra(2)">
+        <img src="./img/tec4.jpg" alt="" name="muestra3" class="image2" onclick="muestra(3)">
+        <img src="./img/tec5.jpg" alt="" name="muestra4" class="image2" onclick="muestra(4)">
+    </div>
+</section>
+
+<section class="Ej2">
+    <h3>Ejercicio 6- Creación de nodos</h3>
+    <div class="botonesBase">
+        <input type="button" id="btnCrear" class="btn btn-primary" value="Crear">
+        <input type="button" id="btnCopiar" class="btn btn-primary" value="Copiar">
+        <input type="button" id="btnEliminar" class="btn btn-danger" value="Eliminar">
+    </div>
+    <div id="copia">
+        <p id="newText"></p>
+    </div>
+</section>
+
+<section class="mb-3">
+    <div class="container">
+        <h3>Ejercicio 7</h3>
+        <div class="card card-body col-sm-12">
+            <h4>Agregar Elementos</h4>
+            <form class="mb-3 p-3 border border-2 col-auto" id="frmList">
+                <input type="text" class="form-control" id="txtElement" placeholder="Escribe el elemento">
+                <input type="submit" class="btn btn-outline-primary mt-3" value="Agregar">
+            </form>
+        </div>
+        <h4>Elementos</h4>
+        <ul class="list-group" id="elementos">
+            <li class="list-group-item">Elemento1 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</li>
+            <li class="list-group-item">Elemento2 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</li>
+            <li class="list-group-item">Elemento3 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</li>
+            <li class="list-group-item">Elemento4 <button class="btn btn-light btn-outline-danger btn-sm float-end delete">X</li>
+        </ul>
+    </div>
+</section>
 </main>
-    <footer>
+    <footer class="piePagina">
         Coded by © Naslyb86
+        Talento COEX
     </footer>
     <script src="./main.js"></script>
 </body>

@@ -28,6 +28,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     margin: 20px;
 }
@@ -52,3 +53,40 @@ textarea:invalid {border-color: rgb(223, 14, 7);}
     75% {transform: translateX(-8px)}
 }
 textarea:invalid {animation: shake 0.2s 0s 3;}
+
+/* Ejercicio 4 */
+#txtCaracteres{
+    width: 25%;
+    height: 60px;
+}
+
+/* Ejercicio 5 */
+
+/* Ajuste de div e imagenes */
+.imageContentDisplay{
+    border: solid 2px blue;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 540px;
+}
+.image{
+    height: 400px;
+    width: 500px;
+}
+.image2{
+    height: 100px;
+    cursor: pointer;
+    width: 120px;
+    margin-right: 40px;
+}
+
+.piePagina{
+    background-color: rgb(110, 206, 174);
+    padding: 20px;
+    text-align: center;
+}
+#frmList{
+    text-align: center;
+}
