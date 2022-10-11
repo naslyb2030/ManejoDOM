@@ -78,11 +78,11 @@ function ValidarNum() {
     }
 }
 btnNum.addEventListener('click',ValidarNum);
-//  Ejercicio 4-----------------------------------------
 
+//  Ejercicio 4-----------------------------------------
 let textoPal=document.querySelector('#txtPalabras');
 // Evento Keyup cada vez que se escribe un caracter se activa
-textoPal.addEventListener('keyup ',alertLetra)
+textoPal.addEventListener('keyup',alertLetra)
 function alertLetra(){
     // Manda una alerta con lo que se escribió
     alert("Escribiste: "+textoPal.value);
@@ -155,7 +155,7 @@ function fnEliminarNodo() {
     // LLame al ontenedor padre y borre el hijo 
     eliminarNodo.parentNode.removeChild(eliminarNodo);
 }
-document.getElementById('btnEliminar').addEventListener('click',fnEliminar);
+document.getElementById('btnEliminar').addEventListener('click',fnEliminarNodo);
 
 // Ejercicio 7--------------------------------------------------------------------
 // Almacenamos la lista
