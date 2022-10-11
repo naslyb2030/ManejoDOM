@@ -61,7 +61,23 @@ function ValidarNumCar() {
     if (patronNum.test(txtCarNum.value)&&patronCar.test(txtCarNum.value)) {
         document.querySelector("#errorCarNum").innerHTML=texto1
     }else{
-        document.querySelector("#errorCarNum").innerHTML=texto2ocument.getElementById('boton')}}
+        document.querySelector("#errorCarNum").innerHTML=texto2
+    }
+}
+btnCarNum.addEventListener('click',ValidarNumCar);
+
+let txtNum= document.querySelector('#txtNum');
+let btnNum= document.querySelector('#btnNum');
+let patronNumber= /^607+[0-9]{7}/
+
+function ValidarNum() {
+    if (patronNumber.test(txtNum.value)) {
+        document.querySelector("#errorNum").innerHTML=texto1
+    }else{
+        document.querySelector("#errorNum").innerHTML=texto2
+    }
+}
+btnNum.addEventListener('click',ValidarNum);
 //  Ejercicio 4-----------------------------------------
 
 let textoPal=document.querySelector('#txtPalabras');
@@ -133,7 +149,7 @@ function fnCopiar() {
     document.getElementById('copia').appendChild(copia);
 }
 document.getElementById('btnCopiar').addEventListener('click',fnCopiar);
-function fnEliminar() {
+function fnEliminarNodo() {
     // Traemos el p
     let eliminarNodo=document.getElementById('newText');
     // LLame al ontenedor padre y borre el hijo 
@@ -141,7 +157,7 @@ function fnEliminar() {
 }
 document.getElementById('btnEliminar').addEventListener('click',fnEliminar);
 
-// Ejercicio 14--------------------------------------------------------------------
+// Ejercicio 7--------------------------------------------------------------------
 // Almacenamos la lista
 let listaElementos=document.querySelector('#elementos');
 

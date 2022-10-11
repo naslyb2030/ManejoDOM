@@ -37,12 +37,7 @@
     min-width: 1000px;
     height: 200px;
 }
-.btn{
-    background-color: black;
-    color: white;
-    height: 40px;
-    width: 80px;
-}
+
 /* Validación textarea */
 textarea:valid {border-color: rgb(7, 223, 7);}
 textarea:invalid {border-color: rgb(223, 14, 7);}
